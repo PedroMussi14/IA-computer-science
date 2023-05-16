@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="navbar"> <!--Navbar-->
+    <div class="title"> Coleiras Personalizadas</div>
+    <div> <img src="images/dog-collar.png" class="coleira-img"> </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <label class="dropdown-label" for="dropdown-checkbox">Products</label>
+          <input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox">
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="products.html">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>
+          <a href="cart.html">
+            <div class="cart">
+              <i class="bi bi-cart2"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+          </a>
+        </li>
+              <!--Social Media Icons-->
+    <div class="social-media-icons">
+      <a target="_blank" href="https://www.instagram.com/" class="icon instagram"></a>
+      <a target="_blank" href="https://www.facebook.com/" class="icon facebook"></a>
+      <a target="_blank" href="https://twitter.com/" class="icon twitter"></a>
+    </div>
+      </ul>
+</div>  
+
+<div class="log-box">
+<form action="index.html">
+  <div>
+    <div class="barra-imagem">
+      <img src="images/profile.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input id= "password" type="password" placeholder="Enter Password" name="password" required>
+      <span class="error-message"></span>
+      
+      <button class= login-btn type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style= background-color:#ffcc54>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</form>
+</div>
+<script src="login.js"></script>
+<div>
+  <!--Footer-->
+    <footer class="footer">@Copyright Terms</footer>
+</div>
+</body>
+</html>

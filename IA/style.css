@@ -1,0 +1,219 @@
+body {
+  background-color: rgba(254, 254, 152, 0.877);
+ }
+
+ /* nav bar style */
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coleira-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  margin-left: -170px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nav bar links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: rgba(250, 250, 38, 0.8);
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram {
+  background-image: url('images/instagram.png');
+}
+
+.facebook {
+  background-image: url('images/facebook.png');
+}
+
+.twitter {
+  background-image: url('images/twitter.png');
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/* Slider container */
+.slider {
+  width: 800px;
+  top: 16%;
+  left: 23%;
+  right: 40%;
+  height: 550px;
+  position: absolute;
+  padding: 0px;
+  margin: 10px 0;
+  bottom: 8%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Slider images */
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Show first image by default */
+.slider img:first-child {
+  opacity: 1;
+}
+
+/* Navigation buttons */
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on navigation buttons */
+.slider .prev:hover, .slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position of previous button */
+.slider .prev {
+  left: 1rem;
+}
+
+/* Position of next button */
+.slider .next {
+  right: 1rem;
+}
+
+/* Caption container */
+.slider .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Caption text */
+.slider .caption h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Caption subtext */
+.slider .caption p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Active caption */
+.slider .active {
+  transform: translateY(0);
+}
+
+/* Inactive caption */
+.slider .inactive {
+  transform: translateY(100%);
+}
+
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: burlywood;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  margin: 0;
+}
+
